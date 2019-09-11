@@ -1,9 +1,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
-#define numfiles 20                     //Number files for dividing on blocks
-#define rand_num 20000                    //Number of random created integers in main source file(inA)
+#define numfiles 10                     //Number files for dividing on blocks
+#define rand_num 2000                    //Number of random created integers in main source file(inA)
 int deflen=rand_num/numfiles;           //Number of integers in every file
+//int deflen=200;
 int files_num=0;                        //Counter for num of files
 
 using namespace std;
@@ -69,21 +70,11 @@ int read_arr(FILE* input,array in){
 //printing an array in file and on the screen
 void print_arr(array in,FILE* out){
     for(int i=0;i<in.length;i++){
-        cout<<in.A[i]<<" ";
+        //cout<<in.A[i]<<" ";
         fprintf(out,"%d%c",in.A[i],' ');
     }
     fprintf(out,"%c%c",' ','/');
-    cout<<endl;
-}
-
-//concatenating the rest of the array from starting position
-void conc_arr(array in,FILE* out,int start_pos){
-    for(start_pos=0;start_pos<in.length;start_pos++){
-        //cout<<in.A[start_pos]<<" ";
-        fprintf(out,"%d%c",in.A[start_pos],' ');
-    }
-    fprintf(out,"%c%c",'/',' ');
-    cout<<endl;
+    //cout<<endl;
 }
 
 //merging an array in sorted one
