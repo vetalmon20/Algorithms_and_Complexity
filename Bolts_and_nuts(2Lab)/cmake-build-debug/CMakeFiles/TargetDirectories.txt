@@ -1,0 +1,3 @@
+D:/MyRepositories/Algorithms_and_Complexity/Bolts_and_nuts(2Lab)/cmake-build-debug/CMakeFiles/Bolts_and_nuts_2Lab_.dir
+D:/MyRepositories/Algorithms_and_Complexity/Bolts_and_nuts(2Lab)/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MyRepositories/Algorithms_and_Complexity/Bolts_and_nuts(2Lab)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
