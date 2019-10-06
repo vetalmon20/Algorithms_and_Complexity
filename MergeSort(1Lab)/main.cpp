@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string>
 #define numfiles 10                     //Number files for dividing on blocks
-#define rand_num 2000                    //Number of random created integers in main source file(inA)
+#define rand_num 2000                   //Number of random created integers in main source file(inA)
 int deflen=rand_num/numfiles;           //Number of integers in every file
 //int deflen=200;
 int files_num=0;                        //Counter for num of files
@@ -157,14 +157,13 @@ int main() {
         arr.length=read_arr(fina,arr);
         mergesort(arr,0,arr.length);
         print_arr(arr,blocks[i]);
-//making cursor on the start to operate with the block of data
+//making cursor on the start to operate with the block of data later
         rewind(blocks[i]);
     }
 //actually MERGING *numfiles* IN ONE
-    //fprintf(blocks[0],"%i",22);
     int smallest,smallest_pos,not_empty_pos,temp,k;
     not_empty_pos=0;
-    int s=0;
+    int s=0;                                                        //number of gen integers
     while(s<rand_num){
         while(is_file_empty(blocks[not_empty_pos])) {
             not_empty_pos++;                            //finding the next NOT EMPTY file
@@ -177,13 +176,14 @@ int main() {
         fscanf(blocks[not_empty_pos],"%i",&smallest);   //making a new first element the smallest
         fseek(blocks[not_empty_pos],pos,SEEK_SET);//return the pos in order not to miss the unused integer if the file
 
+
         k=not_empty_pos;
         while(k<numfiles) {                             //finding the smallest one
             if(is_file_empty(blocks[k])){
                 k++;
-
             }
             else {
+                //saving the position of the cursor in order to come back later
                 pos = ftell(blocks[k]);
 
                 fscanf(blocks[k], "%i", &temp);
@@ -192,13 +192,13 @@ int main() {
                     smallest_pos = k;
                 }
 
-                fseek(blocks[k], pos, SEEK_SET);
+                fseek(blocks[k], pos, SEEK_SET);    //returning our cursor on the starting pos
                 k++;
             }
         }
         fscanf(blocks[smallest_pos],"%i",&temp);//just the easy way to step a cursor on one int right
         fprintf(result,"%i%c",smallest,' ');
-    s++;
+    s++;            //one more integer is sorted
     }
     delete_files();
 
