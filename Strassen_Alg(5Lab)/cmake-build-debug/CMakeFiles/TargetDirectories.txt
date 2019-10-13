@@ -1,0 +1,3 @@
+D:/MyRepositories/Algorithms_and_Complexity/Strassen_Alg(5Lab)/cmake-build-debug/CMakeFiles/Strassen_Alg_5Lab_.dir
+D:/MyRepositories/Algorithms_and_Complexity/Strassen_Alg(5Lab)/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MyRepositories/Algorithms_and_Complexity/Strassen_Alg(5Lab)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
