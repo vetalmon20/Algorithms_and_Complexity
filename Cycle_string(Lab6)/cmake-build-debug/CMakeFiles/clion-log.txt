@@ -1,0 +1,4 @@
+"D:\programms\CLion\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\MyRepositories\Algorithms_and_Complexity\Cycle_string(Lab6)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/MyRepositories/Algorithms_and_Complexity/Cycle_string(Lab6)/cmake-build-debug

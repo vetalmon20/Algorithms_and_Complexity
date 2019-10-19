@@ -1,3 +1,12 @@
+/**
+ * 2nd Course K-29
+ * Lab 5.
+ * Task: perform Strassen algorithm
+ *
+ *@author Vitaliy Datsiuk
+ *@version 1.0 19/10/19
+ */
+
 #include <iostream>
 
 using namespace std;
