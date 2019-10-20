@@ -56,6 +56,11 @@ bool isCycled(string a, string b){
 int main() {
 
 
+    string as,ad;
+    as = "AAAA";
+    ad = "AAAAAAB";
+    cout << isCycled(as,ad) << endl;
+
     string q1 = "ABACE";
     string q2 = "CDABA";
     cout << isCycled(q1, q2) << endl;

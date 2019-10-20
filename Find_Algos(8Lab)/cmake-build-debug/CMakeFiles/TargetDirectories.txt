@@ -1,0 +1,3 @@
+D:/MyRepositories/Algorithms_and_Complexity/Find_Algos(8Lab)/cmake-build-debug/CMakeFiles/Find_Algos_8Lab_.dir
+D:/MyRepositories/Algorithms_and_Complexity/Find_Algos(8Lab)/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MyRepositories/Algorithms_and_Complexity/Find_Algos(8Lab)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
