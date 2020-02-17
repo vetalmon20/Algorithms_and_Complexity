@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/MyRepositories/Algorithms_and_Complexity/Ideal_hashing(2.1lab)/Group.h
+iostream
+-
+string
+-
+vector
+-
+
+D:/MyRepositories/Algorithms_and_Complexity/Ideal_hashing(2.1lab)/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Group.h
+D:/MyRepositories/Algorithms_and_Complexity/Ideal_hashing(2.1lab)/Group.h
+
